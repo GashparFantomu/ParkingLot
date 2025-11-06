@@ -10,7 +10,7 @@ public class HelloServlet extends HttpServlet {
     private String message;
 
     public void init() {
-        message = "You clicked the link... why?";
+        message = "BENZINA! NU ACI E LOCU DE PARCAREEEE AAAAAAH";
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
