@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+
     </head>
     <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -48,7 +50,7 @@
     <h1>SANDULEEE! AVEM FOOTER SI NAVBAR</h1>
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <p class="col-md-4 mb-0 text-muted">&copy; Pinko Samuel-Stefan copyright - r incercuit</p>
+            <p class="col-md-4 mb-0 text-muted">&copy; njgndjrkg copyright - r incercuit</p>
 
             <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                 <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
@@ -64,3 +66,4 @@
         </footer>
     </div>
     </body>
+</html>

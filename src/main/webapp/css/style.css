@@ -1,0 +1,16 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* face corpul să ocupe toată înălțimea ecranului */
+    margin: 0;
+}
+
+footer {
+    margin-top: auto; /* împinge footerul jos */
+}
+
