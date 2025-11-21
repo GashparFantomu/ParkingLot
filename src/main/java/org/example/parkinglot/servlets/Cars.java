@@ -19,4 +19,4 @@ public class Cars extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws
             ServletException, IOException {
     }
-}//de terminat ultimii pasi, daca nu, mori
+}
