@@ -20,20 +20,23 @@ public class CarsBean {
     @PersistenceContext
     EntityManager entityManager;
 
-/*    void copyCarsToDto(Car car){
-        List<CarDto> carsDto = new ArrayList<>(); //sunt racit, sunt mort, rezolv mai tarziu :/
-        carsDto.add(car);
-    }*/
+    List<CarDto> copyCarsToDto(List<Car> cars) {
+        List<CarDto> carsDto = new ArrayList<>();
+        for (Car car : cars) {
+            carsDto.add(new CarDto(car.getId(), car.getLicensePlate(), car.getParkingSpot(), car.getOwner().getUsername()));
+        }
+        return carsDto;
+    };
 
-/*    List<CarDto> findAllCars() {
+    public List<CarDto> findAllCars() {
         LOG.info("findAllCars");
         try{
             TypedQuery<Car> typedQuery = entityManager.createQuery("SELECT c FROM Car c", Car.class);
             List<Car> cars = typedQuery.getResultList();
-            //return copyCarsToDto(cars);
+            return copyCarsToDto(cars);
         }catch(Exception ex){
             throw new EJBException(ex);
         }
-    }*/
+    }
 
 }

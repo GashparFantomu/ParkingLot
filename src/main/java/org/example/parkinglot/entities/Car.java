@@ -10,10 +10,10 @@ public class Car {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "licensePlate")
+    @Column(name = "licensePlate", nullable = false)
     private String licensePlate;
 
-    @Column(name = "parkingSpot")
+    @Column(name = "parkingSpot", nullable = false)
     private String parkingSpot;
 
     @ManyToOne(optional = false)
@@ -37,4 +37,19 @@ public class Car {
         this.id = id;
     }
 
+    public String getLicensePlate() {
+        return licensePlate;
+    }
+
+    public void setLicensePlate(String licensePlate) {
+        this.licensePlate = licensePlate;
+    }
+
+    public String getParkingSpot() {
+        return parkingSpot;
+    }
+
+    public void setParkingSpot(String parkingSpot) {
+        this.parkingSpot = parkingSpot;
+    }
 }
