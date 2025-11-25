@@ -7,45 +7,25 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
     <t:pageTemplate pageTitle="Cars">
         <h1>Cars</h1>
         <div id="container text-center">
-            <div class = "row">
-                <div class = 'col-md-3'>
-                    <p>Car 1</p>
+            <c:forEach var = "car" items = "${cars}">
+                <div class="row">
+                    <div class="col">
+                        ${car.licensePlate}
+                    </div>
+                    <div class="col">
+                        ${car.parkingSpot}
+                    </div>
+                    <div class="col">
+                        ${car.ownerName}
+                    </div>
                 </div>
-                <div class = 'col-md-3'>
-                    <p>Spot 1</p>
-                </div>
-                <div class = 'col-md-3'>
-                    <p>User 1</p>
-                </div>
-            </div>
+            </c:forEach>
 
-            <div class = "row">
-                <div class = 'col-md-3'>
-                    <p>Car 2</p>
-                </div>
-                <div class = 'col-md-3'>
-                    <p>Spot 2</p>
-                </div>
-                <div class = 'col-md-3'>
-                    <p>User 2</p>
-                </div>
-            </div>
-            <div class = "row">
-                <div class = 'col-md-3'>
-                    <p>Car 3</p>
-                </div>
-                <div class = 'col-md-3'>
-                    <p>Spot 3</p>
-                </div>
-                <div class = 'col-md-3'>
-                    <p>User 3</p>
-                </div>
-            </div>
-        </div>
         <h5>Free parking lots ${numberOfFreeParkingLots}</h5>
         <p>For now you're not stuck in the dark void anymore (AKA Mega Image) since you found the parking lot</p>
     </t:pageTemplate>

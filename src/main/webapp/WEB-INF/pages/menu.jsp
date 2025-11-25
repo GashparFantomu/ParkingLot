@@ -20,7 +20,7 @@
                         <a class="nav-link active" aria-current="page" href="${pageContext.request.contextPath}/about.jsp">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/users.jsp">Users</a>
                     </li>
                     <li>
                         <a class="nav-link" href="${pageContext.request.contextPath}/login.jsp">Login plz</a>
