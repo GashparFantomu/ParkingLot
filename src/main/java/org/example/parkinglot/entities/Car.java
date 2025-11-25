@@ -10,10 +10,10 @@ public class Car {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "licensePlate", nullable = false)
+    @Column(name = "licensePlate")
     private String licensePlate;
 
-    @Column(name = "parkingSpot", nullable = false)
+    @Column(name = "parkingSpot")
     private String parkingSpot;
 
     @ManyToOne(optional = false)
