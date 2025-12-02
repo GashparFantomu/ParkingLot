@@ -11,7 +11,7 @@
 
     <t:pageTemplate pageTitle="Cars">
         <h1>Cars</h1>
-        <a href="${pageContext.request.contextPath}/AddCar" class = "btn btn-primary btn-lg.">Add Car</a>
+        <a href="${pageContext.request.contextPath}/AddCar.jsp" class = "btn btn-primary btn-lg.">Add Car</a>
         <div id="container text-center">
             <c:forEach var = "car" items = "${cars}">
                 <div class="row">
@@ -22,7 +22,7 @@
                         ${car.parkingSpot}
                     </div>
                     <div class="col">
-                        ${car.ownerName}
+                        ${car.owner_id}
                     </div>
                 </div>
             </c:forEach>
