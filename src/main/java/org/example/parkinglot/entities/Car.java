@@ -3,7 +3,7 @@ package org.example.parkinglot.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "car")
+@Table(name = "cars")
 public class Car {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
