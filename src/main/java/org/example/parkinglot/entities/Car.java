@@ -3,18 +3,18 @@ package org.example.parkinglot.entities;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "cars")
+@Table(name = "car")
 public class Car {
-    @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
-    @Column(name = "id", nullable = false)
-    private Long id;
+    @Column(name = "parkingSpot")
+    private String parkingSpot;
 
     @Column(name = "licensePlate")
     private String licensePlate;
 
-    @Column(name = "parkingSpot")
-    private String parkingSpot;
+    @Id
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @Column(name = "id", nullable = false)
+    private Long id;
 
     @ManyToOne(optional = false)
     @JoinColumn(name = "owner_id", nullable = false)

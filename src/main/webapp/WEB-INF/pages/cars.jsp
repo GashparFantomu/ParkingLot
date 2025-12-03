@@ -8,10 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@taglib prefix="t" tagdir="/WEB-INF/tags" %>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+    <c:set var = "activePage" value = "Cars"/>
     <t:pageTemplate pageTitle="Cars">
         <h1>Cars</h1>
-        <a href="${pageContext.request.contextPath}/AddCar.jsp" class = "btn btn-primary btn-lg.">Add Car</a>
+        <a href="${pageContext.request.contextPath}/addCar.jsp" class = "btn btn-primary btn-lg.">Add Car</a>
         <div id="container text-center">
             <c:forEach var = "car" items = "${cars}">
                 <div class="row">
@@ -27,9 +27,6 @@
                 </div>
             </c:forEach>
 
-        <h5>Free parking lots ${numberOfFreeParkingLots}</h5>
-        <p>For now you're not stuck in the dark void anymore (AKA Mega Image) since you found the parking lot</p>
-
-
-
+        <h5>Free parking lots ${numberOfFreeParkingSpots}</h5>
+        <p>You're not stuck in the dark void anymore (Mega Image) since you found the parking lot</p>
     </t:pageTemplate>

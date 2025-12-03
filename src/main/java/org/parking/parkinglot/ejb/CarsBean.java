@@ -20,14 +20,6 @@ public class CarsBean {
     @PersistenceContext
     EntityManager entityManager;
 
-    List<CarDto> copyCarsToDto(List<Car> cars) {
-        List<CarDto> carsDto = new ArrayList<>();
-        for (Car car : cars) {
-            carsDto.add(new CarDto(car.getId(), car.getLicensePlate(), car.getParkingSpot(), car.getOwner().getUsername()));
-        }
-        return carsDto;
-    };
-
     public List<CarDto> findAllCars() {
         LOG.info("findAllCars");
         try{
@@ -39,4 +31,12 @@ public class CarsBean {
         }
     }
 
+    List<CarDto> copyCarsToDto(List<Car> cars) {
+        List<CarDto> carsDto = new ArrayList<>();
+        for (Car car : cars) {
+            CarDto dto = new CarDto(car.getId(), car.getLicensePlate(), car.getParkingSpot(), car.getOwner().getUsername());
+            carsDto.add(dto);
+        }
+        return carsDto;
+    };
 }

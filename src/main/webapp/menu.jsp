@@ -23,10 +23,10 @@
                         <a class="nav-link active" href="${pageContext.request.contextPath}/users.jsp">Users</a>
                     </li>
                     <li>
-                        <a class="nav-link" href="${pageContext.request.contextPath}/login.jsp">Login plz</a>
+                        <a class="nav-link" href="${pageContext.request.contextPath}/login.jsp">Login</a>
                     </li>
                     <li>
-                        <a class="nav-link active" aria-current="page" href="${pageContext.request.contextPath}/cars.jsp">Carz</a>
+                        <a class="nav-link active" aria-current="page" href="${pageContext.request.contextPath}/WEB-INF/pages/cars.jsp">Cars</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
